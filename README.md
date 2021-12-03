@@ -1,7 +1,7 @@
 # Photo Gallery
 The Photo Gallery module provides the Gallery Photo content type, and view with page, standard block, and rotating block displays.
 
-##Getting the Files
+## Getting the Files
 
 1. Clone the feature from the Github repository where you would like (If you already have the repository on your computer, skip this step).
 
@@ -15,7 +15,7 @@ The Photo Gallery module provides the Gallery Photo content type, and view with 
 
 3. This directory is now up to date with all the information and files you need to install and set up the Photo Gallery Feature.
 
-##Installation and Configuration
+## Installation and Configuration
 
 1. Open the Pantheon dashboard to the development environment for the site.
 2. Make sure the environment is in SFTP mode and connect to the environment in your SFTP client of choice.
