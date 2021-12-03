@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_lg_992_1200
+label: 'Gallery LG 992-1200'
+effects:
+  59ec34d0-f1af-46f4-a332-c624a7db532c:
+    uuid: 59ec34d0-f1af-46f4-a332-c624a7db532c
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: true

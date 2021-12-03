@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_md_768_992
+label: 'Gallery MD 768-992'
+effects:
+  dbc19dd4-65b3-456f-9e52-976fc7def449:
+    uuid: dbc19dd4-65b3-456f-9e52-976fc7def449
+    id: image_scale
+    weight: 1
+    data:
+      width: 992
+      height: null
+      upscale: true

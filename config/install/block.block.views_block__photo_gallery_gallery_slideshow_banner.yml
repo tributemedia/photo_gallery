@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.photo_gallery
+  module:
+    - system
+    - views
+  theme:
+    - narwhal
+id: views_block__photo_gallery_gallery_slideshow_banner
+theme: narwhal
+region: preface
+weight: -28
+provider: null
+plugin: 'views_block:photo_gallery-gallery_slideshow_banner'
+settings:
+  id: 'views_block:photo_gallery-gallery_slideshow_banner'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /gallery
+    negate: false
+    context_mapping: {  }

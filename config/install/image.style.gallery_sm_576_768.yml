@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_sm_576_768
+label: 'Gallery SM 576-768'
+effects:
+  7652c5d1-7d44-4fd3-948d-69ec5e3a451f:
+    uuid: 7652c5d1-7d44-4fd3-948d-69ec5e3a451f
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: true

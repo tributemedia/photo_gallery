@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_xl_1200_1800
+label: 'Gallery XL 1200-1800'
+effects:
+  e059dfe7-eb20-4a33-b0db-0807ba814936:
+    uuid: e059dfe7-eb20-4a33-b0db-0807ba814936
+    id: image_scale
+    weight: 1
+    data:
+      width: 1800
+      height: null
+      upscale: true

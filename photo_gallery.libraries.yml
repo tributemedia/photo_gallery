@@ -1,0 +1,8 @@
+photo-gallery-views:
+  css:
+    theme:
+      css/gallery_views.css: {}
+photo-gallery-node:
+  css:
+    theme:
+      css/gallery_node.css: {}

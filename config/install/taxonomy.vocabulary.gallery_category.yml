@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Gallery Category'
+vid: gallery_category
+description: 'Use this to categorize your photo gallery.'
+weight: 0

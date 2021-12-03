@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: gallery_photo
+label: 'Gallery Photo'
+type: 'canonical_entities:node'
+pattern: 'gallery/[node:title]'
+selection_criteria:
+  057b011f-d458-44a2-a539-197c88e4515b:
+    id: node_type
+    bundles:
+      gallery_photo: gallery_photo
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 057b011f-d458-44a2-a539-197c88e4515b
+selection_logic: and
+weight: -5
+relationships: {  }

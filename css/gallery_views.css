@@ -1,0 +1,110 @@
+.gallery .views-row ul{
+  margin:0;
+  padding:0;
+}
+.gallery .views-row li {
+  list-style-type:none;
+}
+
+/** page view **/
+
+
+.gallery .views-row {
+  width:calc(50% - 40px);
+  float:left;
+  margin:0 20px;
+}
+
+.gallery h3 {
+  padding:0 20px;
+}
+
+
+/** block view **/
+
+.gallery-block .views-row {
+  margin-bottom:40px;
+}
+
+/** single image block **/
+
+.gallery.gallery-single .views-row {
+  width:100%;
+  margin:0 0 10px;
+}
+
+
+/** single image slideshow sb **/
+
+.gallery.gallery-single-slideshow {
+  position:relative;
+  height:250px;
+}
+
+.gallery.gallery-single-slideshow .more-link {
+  position:absolute;
+  bottom:-40px;
+}
+
+/** slideshow block view **/
+
+.gallery-banner-slideshow, .gallery-banner-slideshow .views_slideshow_cycle_slide .views-field-field-image img {
+	height:200px;
+}
+.banner-wrapper .gallery-banner-slideshow, .banner-wrapper .gallery-banner-slideshow .views_slideshow_cycle_slide .views-field-field-image img {
+	height:300px;
+}
+.gallery-banner-slideshow {
+	overflow:hidden;
+}
+
+.gallery-banner-slideshow .views-row {
+	width:100% !important;
+	margin:0px;
+}
+
+.gallery-banner-slideshow .views_slideshow_cycle_slide {
+	width:100%;
+	height:auto;
+}
+
+.gallery-banner-slideshow .views_slideshow_cycle_slide .views-field-field-image img {
+	width:100%;
+	object-fit:cover;
+}
+
+/* ================= */
+/* = Media Queries = */
+/* ================= */
+
+
+@media (min-width:768px){
+  .gallery .views-row {
+    width:calc(33.3% - 40px);
+  }
+  .gallery-banner-slideshow, .gallery-banner-slideshow .views_slideshow_cycle_slide .views-field-field-image img {
+  	height:300px;
+  }
+  .banner-wrapper .gallery-banner-slideshow, .banner-wrapper .gallery-banner-slideshow .views_slideshow_cycle_slide .views-field-field-image img {
+  	height:400px;
+  }
+}
+
+@media (min-width:992px){
+  .gallery .views-row {
+    width:calc(25% - 40px);
+  }
+  .gallery-banner-slideshow, .gallery-banner-slideshow .views_slideshow_cycle_slide .views-field-field-image img {
+  	height:400px;
+  }
+  .banner-wrapper .gallery-banner-slideshow, .banner-wrapper .gallery-banner-slideshow .views_slideshow_cycle_slide .views-field-field-image img {
+  	height:500px;
+  }
+}
+
+@media (min-width:1200px){
+  .gallery .views-row {
+    width:calc(20% - 40px);
+  }
+}
+

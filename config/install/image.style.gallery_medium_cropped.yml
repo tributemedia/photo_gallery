@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: gallery_medium_cropped
+label: 'Gallery Medium Cropped'
+effects:
+  4c53afa4-66ff-4a10-bca2-7ada25275d13:
+    uuid: 4c53afa4-66ff-4a10-bca2-7ada25275d13
+    id: image_effects_scale_and_smart_crop
+    weight: 1
+    data:
+      width: '230'
+      height: '230'
+      upscale: true
+      simulate: false
+      algorithm: entropy_slice

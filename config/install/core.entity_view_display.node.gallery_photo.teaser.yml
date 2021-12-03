@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gallery_photo.field_featured
+    - field.field.node.gallery_photo.field_gallery_category
+    - field.field.node.gallery_photo.field_gallery_images
+    - node.type.gallery_photo
+  module:
+    - user
+id: node.gallery_photo.teaser
+targetEntityType: node
+bundle: gallery_photo
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_featured: true
+  field_gallery_category: true
+  field_gallery_images: true

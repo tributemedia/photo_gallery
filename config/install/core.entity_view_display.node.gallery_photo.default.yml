@@ -1,0 +1,37 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.gallery_photo.field_featured
+    - field.field.node.gallery_photo.field_gallery_category
+    - field.field.node.gallery_photo.field_gallery_images
+    - node.type.gallery_photo
+    - responsive_image.styles.gallery_responsive
+  module:
+    - field_formatter_class
+    - responsive_image
+    - user
+id: node.gallery_photo.default
+targetEntityType: node
+bundle: gallery_photo
+mode: default
+content:
+  field_gallery_images:
+    weight: 2
+    label: hidden
+    settings:
+      responsive_image_style: gallery_responsive
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: responsive_image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_featured: true
+  field_gallery_category: true

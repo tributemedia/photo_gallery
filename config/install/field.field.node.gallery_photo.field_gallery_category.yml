@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery_category
+    - node.type.gallery_photo
+    - taxonomy.vocabulary.gallery_category
+id: node.gallery_photo.field_gallery_category
+field_name: field_gallery_category
+entity_type: node
+bundle: gallery_photo
+label: 'Gallery Category'
+description: 'A category is not required. you can add new category by typing a new word. If you choose to use categories (and your gallery page/gallery blocks support it) then you can select a previously used category by starting to type a letter to select. Make sure to verify that a category already exists to avoid too many categories that are similar.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gallery_category: gallery_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_xs_0_576
+label: 'Gallery XS 0-576'
+effects:
+  9b0e30be-d8a5-462a-89fa-b1f8183ec93d:
+    uuid: 9b0e30be-d8a5-462a-89fa-b1f8183ec93d
+    id: image_scale
+    weight: 1
+    data:
+      width: 576
+      height: null
+      upscale: true

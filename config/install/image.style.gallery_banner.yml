@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: gallery_banner
+label: 'Gallery Banner'
+effects:
+  06f07a6e-531b-41a7-9906-2850b51bfb23:
+    uuid: 06f07a6e-531b-41a7-9906-2850b51bfb23
+    id: image_effects_scale_and_smart_crop
+    weight: 1
+    data:
+      width: '1800'
+      height: '600'
+      upscale: true
+      simulate: false
+      algorithm: entropy_slice
