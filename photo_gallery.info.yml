@@ -20,7 +20,8 @@ dependencies:
   - 'field_group:field_group'
   - 'image_effects:image_effects'
   - 'pathauto:pathauto'
+  - 'photo_gallery:photo_gallery'
+  - 'slick:slick'
+  - 'slick_views:slick_views'
   - 'svg_image:svg_image'
-  - 'views_slideshow:views_slideshow'
-  - 'views_slideshow:views_slideshow_cycle'
-version: 8.x-1.0-beta1
+version: 8.x-1.0-beta2

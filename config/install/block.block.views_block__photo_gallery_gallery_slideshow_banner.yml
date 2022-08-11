@@ -11,7 +11,7 @@ dependencies:
 id: views_block__photo_gallery_gallery_slideshow_banner
 theme: narwhal
 region: preface
-weight: -28
+weight: -24
 provider: null
 plugin: 'views_block:photo_gallery-gallery_slideshow_banner'
 settings:
