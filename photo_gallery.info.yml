@@ -24,4 +24,4 @@ dependencies:
   - 'slick:slick'
   - 'slick_views:slick_views'
   - 'svg_image:svg_image'
-version: 8.x-1.0-beta2
+version: v1.0.1
