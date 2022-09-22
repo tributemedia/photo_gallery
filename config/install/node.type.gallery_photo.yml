@@ -5,8 +5,9 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - main
+    parent: 'main:'
 name: 'Gallery Photo'
 type: gallery_photo
 description: 'Your photo gallery needs photos. Adding a photo here will allow that photo to be added to the gallery and appear, automatically on your gallery page or in gallery blocks throughout your website.'

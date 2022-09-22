@@ -11,7 +11,7 @@ bundle: gallery_photo
 label: 'Featured?'
 description: 'This featured item will allow your gallery image to be featured in a slideshow banner block or in a sidebar rotating banner. Note that those displays will crop your image automatically and will work best with landscape oriented photos that are larger in size. (larger than 1200 pixels wide by 600 pixels tall).'
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     value: 0

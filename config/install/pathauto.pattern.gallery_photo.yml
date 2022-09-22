@@ -8,14 +8,14 @@ label: 'Gallery Photo'
 type: 'canonical_entities:node'
 pattern: 'gallery/[node:title]'
 selection_criteria:
-  057b011f-d458-44a2-a539-197c88e4515b:
-    id: node_type
-    bundles:
-      gallery_photo: gallery_photo
+  425a7aac-c447-47c8-b902-cfb6fd9ab44f:
+    id: 'entity_bundle:node'
     negate: false
+    uuid: 425a7aac-c447-47c8-b902-cfb6fd9ab44f
     context_mapping:
       node: node
-    uuid: 057b011f-d458-44a2-a539-197c88e4515b
+    bundles:
+      gallery_photo: gallery_photo
 selection_logic: and
 weight: -5
 relationships: {  }
