@@ -11,8 +11,6 @@ id: gallery_responsive
 label: 'Gallery Responsive'
 image_style_mappings:
   -
-    breakpoint_id: responsive_image.viewport_sizing
-    multiplier: 1x
     image_mapping_type: sizes
     image_mapping:
       sizes: '(max-width: 576px) 576px, (max-width: 768px) 768px, (max-width: 992px) 992px, (max-width: 1200px) 1200px, (min-width: 1201px) 1201px'
@@ -22,5 +20,7 @@ image_style_mappings:
         - gallery_sm_576_768
         - gallery_xl_1200_1800
         - gallery_xs_0_576
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
 breakpoint_group: responsive_image
 fallback_image_style: gallery_lg_992_1200

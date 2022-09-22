@@ -17,7 +17,7 @@ bundle: gallery_photo
 mode: default
 content:
   field_gallery_images:
-    weight: 2
+    type: responsive_image
     label: hidden
     settings:
       responsive_image_style: gallery_responsive
@@ -25,13 +25,13 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: responsive_image
+    weight: 1
     region: content
   links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_featured: true
   field_gallery_category: true
