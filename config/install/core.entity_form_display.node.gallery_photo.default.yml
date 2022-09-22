@@ -15,47 +15,50 @@ third_party_settings:
   field_group:
     group_tabs:
       children:
-        - group_image
+        - group_images
         - group_settings
+      label: Tabs
+      region: content
       parent_name: ''
       weight: 1
       format_type: tabs
       format_settings:
-        id: ''
-        classes: ''
-        direction: horizontal
-      label: Tabs
-      region: content
-    group_image:
-      children:
-        - field_gallery_images
-      parent_name: group_tabs
-      weight: 21
-      format_type: tab
-      format_settings:
-        description: '<p class="form-details">Your gallery photo content type creates an album of photos. You can add only one to this album or you can add as many as you’d like. These photos will be displayed in the total gallery. Often times it makes sense to title the Gallery Photo as the event and then upload all the photos from the same event to one album.</p>'
-        formatter: open
-        required_fields: true
-        id: ''
         classes: ''
         show_empty_fields: false
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
+    group_images:
+      children:
+        - field_gallery_images
       label: Images
       region: content
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: '<p class="form-details">Your gallery photo content type creates an album of photos. You can add only one to this album or you can add as many as you’d like. These photos will be displayed in the total gallery. Often times it makes sense to title the Gallery Photo as the event and then upload all the photos from the same event to one album.</p>'
+        required_fields: true
     group_settings:
       children:
         - field_gallery_category
         - field_featured
-      parent_name: group_tabs
-      weight: 22
-      format_type: tab
-      format_settings:
-        id: ''
-        classes: ''
-        formatter: closed
-        description: ''
-        required_fields: false
       label: Settings
       region: content
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
 id: node.gallery_photo.default
 targetEntityType: node
 bundle: gallery_photo
@@ -68,56 +71,61 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_featured:
-    weight: 4
+    type: boolean_checkbox
+    weight: 12
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_gallery_category:
-    weight: 3
+    type: entity_reference_autocomplete
+    weight: 11
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_gallery_images:
-    weight: 5
+    type: image_image
+    weight: 11
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
   path:
     type: path
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
+    weight: 5
+    region: content
     settings:
       display_label: true
+    third_party_settings: {  }
+  simple_sitemap:
     weight: 4
     region: content
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
+    weight: 9
+    region: content
     settings:
       display_label: true
-    weight: 8
-    region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
+    weight: 6
+    region: content
     settings:
       display_label: true
-    weight: 5
-    region: content
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -130,15 +138,15 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 2
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
