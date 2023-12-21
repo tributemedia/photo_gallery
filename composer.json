@@ -2,7 +2,7 @@
     "name": "tributemedia/photo_gallery",
     "description": "Provides entity types and configuration for the photo gallery feature.",
     "type": "drupal-module",
-    "license": "GPL-3.0-or-later",
+    "license": "AGPL-3.0-or-later",
     "autoload": {
         "psr-4": {
             "Tributemedia\\PhotoGallery\\": "src/"
